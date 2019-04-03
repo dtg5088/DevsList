@@ -13,8 +13,6 @@ class Form extends React.Component {
         mobileApp: "",
         mobileResponsive: "",
 
-        
-
     }
 
     change = e => {
