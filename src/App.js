@@ -26,19 +26,20 @@ class App extends Component {
             </div>
 
 
-			// <Router>
-			// 	<div>
-			// 	<Navbar />
-			// 		{/* <Wrapper> */}
-			// 		<Route exact path="/" component={About} />
-			// 		<Route exact path="/about" component={About} />
-			// 		<Route exact path="/discover" component={Discover} />
-			// 		<Route exact path="/search" component={Search} />
-            //         <Route exact path="/form" component={Form} />
-			// 		{/* </Wrapper> */}
-			// 		{/* <Footer /> */}
-			// 	</div>
-			// </Router>
+			<Router>
+				<div>
+				<Navbar />
+					<Switch>
+					<Route exact path="/" component={About} />
+					<Route exact path="/register" component={Register} />
+					<Route exact path="/discover" component={Discover} />
+					<Route exact path="/devTechnology" component={devTechnology} />
+                    <Route exact path="/form" component={Form} />
+					<Route exact path="/profile" component={Profile} />
+					</Switch>
+					{/* <Footer /> */}
+				</div>
+			</Router>
 		);
 	}
 }
