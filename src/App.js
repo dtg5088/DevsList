@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Form from './pages/Form';
+// import Form from './pages/Form';
+import Discover from './pages/discover';
 // import Navbar from './components/Navbar';
 // import Discover from './pages/Discover';
 // import About from './pages/About';
@@ -12,22 +13,23 @@ class App extends Component {
 		fields: {},
 	};
 
-	onSubmit = fields =>{
-		this.setState({fields});
-		//console.log("App component got: ", fields)
-	};
+	// onSubmit = fields =>{
+	// 	this.setState({fields});
+	// 	//console.log("App component got: ", fields)
+	// };
 
 	render() {
 		return (
-
-            <div className="form">
-                <Form onSubmit={fields => this.onSubmit(fields)}/>
-				<p>{}</p>
-            </div>
+      
+            // <div className="form">
+            //     <Form onSubmit={fields => this.onSubmit(fields)}/>
+			// 	<p>{}</p>
+            // </div>
 
 
 			<Router>
 				<div>
+      
 				<Navbar />
 					<Switch>
 					<Route exact path="/" component={About} />
