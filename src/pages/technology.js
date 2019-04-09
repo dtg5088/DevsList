@@ -9,7 +9,7 @@ class Technology extends React.Component {
               <h2>Technology Explanataion</h2>
               <div>
                 <p>
-                  We completely understand that not everyone has an interest in technology. Our mission at Dev's List is to keep things simple. Below, we have provided a high level explanation of some of the skills you may need from a developer. We highly encourage you to take our questionnarie so we can ensure your satisfaction but for the do-it-yourselfers we hope this clears some things up.
+                  We completely understand that not everyone has an interest in technology. Our mission at Devs List is to keep things simple. Below, we have provided a high level explanation of some of the skills you may need from a developer. We highly encourage you to take our questionnarie so we can ensure your satisfaction but for the do-it-yourselfers we hope this clears some things up.
                 </p>
               </div>
             </section>
