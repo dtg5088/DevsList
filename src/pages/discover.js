@@ -22,8 +22,10 @@ class Discover extends Component {
                         id={card.id}
                         key={card.id}
                         name={card.name}
+                        skills={card.skills}
                         image={card.image}
-                        />                 
+                        >  
+                        </Card>
                 ))}
 
             </Wrapper>

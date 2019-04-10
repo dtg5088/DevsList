@@ -8,6 +8,7 @@ import Discover from './pages/discover';
 import Main from "./pages/Main";
 import Register from "./pages/Register";
 import FrontendDev from "./components/FrontendDev/frontendDev";
+import Technology from './pages/technology';
 
 class App extends Component {
 
@@ -40,6 +41,8 @@ class App extends Component {
 					{/* <Route exact path="/devTechnology" component={devTechnology} /> */}
                     <Route exact path="/form" component={Form} />
 					<Route exact path="/frontendDev" component={FrontendDev} />
+					{/* <Route exact path="/profile" component={Profile} /> */}
+					<Route exact path="/technology" component={Technology} />
 					{/* <Route exact path="/profile" component={Profile} /> */}
 					<Route component={Notfound} />
 					</Switch>
