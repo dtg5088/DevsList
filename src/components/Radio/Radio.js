@@ -1,8 +1,6 @@
 import React from 'react';
 
 
-import React from 'react';
-
 class Radio extends React.Component {
    render() {
      return (
