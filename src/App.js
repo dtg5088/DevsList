@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import Form from './pages/Form';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Notfound from "./pages/notfound";
+import Form from './pages/Form';
+import Nav from './components/Nav/Nav';
 import Discover from './pages/discover';
-// import Navbar from './components/Navbar';
-// import Discover from './pages/Discover';
-// import About from './pages/About';
-// import Search from './pages/Search';
+import Main from "./pages/Main";
+import Technology from './pages/technology';
 
 class App extends Component {
 
@@ -20,7 +21,7 @@ class App extends Component {
 
 	render() {
 		return (
-
+      
             // <div className="form">
             //     <Form onSubmit={fields => this.onSubmit(fields)}/>
 			// 	<p>{}</p>
@@ -29,14 +30,19 @@ class App extends Component {
 
 			<Router>
 				<div>
-				{/* <Navbar /> */}
-					{/* <Wrapper> */}
-					{/* <Route exact path="/" component={About} /> */}
-					{/* <Route exact path="/about" component={About} /> */}
+      
+				<Nav />
+					<Switch>
+					<Route exact path="/" component={Main} />
+					{/* <Route exact path="/register" component={Register} /> */}
 					<Route exact path="/discover" component={Discover} />
-					{/* <Route exact path="/search" component={Search} />
-                    <Route exact path="/form" component={Form} /> */}
-					{/* </Wrapper> */}
+					{/* <Route exact path="/devTechnology" component={devTechnology} /> */}
+                    <Route exact path="/form" component={Form} />
+					{/* <Route exact path="/profile" component={Profile} /> */}
+					<Route exact path="/technology" component={Technology} />
+					{/* <Route exact path="/profile" component={Profile} /> */}
+					<Route component={Notfound} />
+					</Switch>
 					{/* <Footer /> */}
 				</div>
 			</Router>
