@@ -11,7 +11,7 @@ class Form extends React.Component {
         siteInfoStorage: "",
         siteBranding: "",
         mobileApp: "",
-        mobileResponsive: "",
+        mobileResponsive: "",   
 
     }
 
