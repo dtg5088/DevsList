@@ -104,7 +104,7 @@ class Frontend extends React.Component {
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
-                <span>C) All of the above, plus 1 of the following (you can decide and discuss which option you need with your developer after you're matched): <br/> * A link to add directions through google maps to your business <br/>  *Creating an appointment calendar for your clients to use <br/> * Adding an online payment option <br/> *Clients of your business can create a user profile to keep track of appointments and payments. </span>
+                <span>C) All of the above, plus 1 of the following (you can decide and discuss which option you need with your developer after youre matched): <br/> * A link to add directions through google maps to your business <br/>  *Creating an appointment calendar for your clients to use <br/> * Adding an online payment option <br/> *Clients of your business can create a user profile to keep track of appointments and payments. </span>
                 }
                />
             <Radio
