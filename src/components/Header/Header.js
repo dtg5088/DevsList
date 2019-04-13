@@ -23,7 +23,7 @@ class Header extends Component {
                 <div className="mask">
                   <ul>
                     <li className="anim1">
-                      <div className="quote">"The best place to find developers</div>
+                      <div className="quote">The best place to find developers</div>
                       <div className="source">- The Verge</div>
                     </li>
                     <li className="anim2">
