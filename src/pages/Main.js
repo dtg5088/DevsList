@@ -11,7 +11,7 @@ class Main extends React.Component {
                 <h2>Our purpose</h2>
                 <div>
                   <p>
-                    Dev's List was created to facilitate communication
+                    Devs List was created to facilitate communication
                     between client and developer and takes away the need
                     to be tech savvy! Client can now be confident in
                     getting the skilled developer that matches their
@@ -41,8 +41,8 @@ class Main extends React.Component {
                     </p>
                     <p className="service-title">Designers</p>
                     <p>
-                      Sometimes there's the need to create a render,
-                      improve a company's image or you are just in need
+                      Sometimes theres the need to create a render,
+                      improve a companys image or you are just in need
                       for a website overhaul; for this purpose we have a
                       team of ilustrators, UX/UI, visual and animation
                       experts.
