@@ -1,0 +1,10 @@
+.navbar {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: rgb(36,99,146);
+    height: 60px;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.5);
+}
+
+.navbar .btn {
+    font-family: 'PT Sans Narrow', sans-serif;
+}

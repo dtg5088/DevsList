@@ -1,26 +1,45 @@
 import React, { Component } from "react";
+import logo from "../../images/devslogo.png"
+// import { Link } from "react-router-dom";
+import "./nav.css";
+
+
 
 class Nav extends Component {
     render(){
         return (
-          <nav className="navbar navbar-light bg-light">
-            <a className="navbar-brand" href="/">
-              <img
-                src="https://via.placeholder.com/150"
-                width="50"
-                height="50"
-                alt=""
-              />
-              DEV'S List
-            </a>
-            <form className="form-inline">
-              <button className="btn btn-outline-success" type="button">
-                Login
+          <nav className="navbar navbar-toggleable-md navbar-inverse fixed-top">
+            <div className="container">
+              <button className="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
-            </form>
+              <a className="navbar-brand" href="/">
+                <img src={logo} width="95" height="38" alt="" />
+              </a>
+              <div className="collapse navbar-collapse" id="navbarCollapse">
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item active">
+                    <a className="nav-link" href="/discover">DISCOVER</a>
+                  </li>
+                  <li className="nav-item active">
+                    <a className="nav-link" href="/form">INTAKE FORM</a>
+                  </li>
+                </ul>
+              </div>
+              <form className="form-inline">
+                <button type="button" class="btn btn-outline-light navbar-btn">Sign in</button>
+              </form>
+              {/* <form className="form-inline mt-2 mt-md-0">
+                <input className="form-control mr-sm-2" type="text" placeholder="Search" />
+                  <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> */}
+            </div>
           </nav>
         );
     }
 }
 
 export default Nav;
+
+
+
