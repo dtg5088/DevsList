@@ -324,7 +324,5 @@ class Frontend extends React.Component {
     }
  
   }
-
-  export {
-    Frontend
-  }
+ 
+  export default Frontend;

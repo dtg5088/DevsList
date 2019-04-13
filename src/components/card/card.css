@@ -1,6 +1,6 @@
 .devCard{
     background:none;
-    height: 250px;
+    height: 400px;
     position: relative;
     margin: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -9,6 +9,8 @@
 
 
 .devCard > .card-img-top {
-    width: 25%;
+    /* position: fixed; */
+   width:40%;
+    height:100px;
     align-content: center;
   }
