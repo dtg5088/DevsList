@@ -41,7 +41,7 @@ class Main extends React.Component {
                     </p>
                     <p className="service-title">Designers</p>
                     <p>
-                      Sometimes there's the need to create a render,
+                      Sometimes theres the need to create a render,
                       improve a company's image or you are just in need
                       for a website overhaul; for this purpose we have a
                       team of ilustrators, UX/UI, visual and animation
