@@ -12,7 +12,7 @@ class Radio extends React.Component {
                name={this.props.name}
                checked={this.props.isChecked}
                disabled={this.props.disabled}
-               // onChange={ () => this.props.onChange() }
+               onChange={ this.props.onChange}
            />
            <label
                aria-hidden="true"
