@@ -28,7 +28,7 @@ class Form extends React.Component {
        console.log(this.state);
        this.setState({
            businessType: "",
-           businessSize: "",
+           businessAge: "",
            webSiteGoal: "",
            siteFunction: "",
            siteInfoStorage: "",

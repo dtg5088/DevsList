@@ -10,7 +10,8 @@ import Register from "./pages/Register";
 import FrontendDev from "./components/FrontendDev/frontendDev";
 import BackendDev from "./components/BackendDev/backendDev";
 import Technology from './pages/technology';
-import Client from "./pages/Client";
+import Frontend from "./pages/Client";
+import Profile from './pages/profile';
 
 class App extends Component {
 
@@ -41,13 +42,14 @@ class App extends Component {
 					<Route exact path="/register" component={Register} />
 					<Route exact path="/discover" component={Discover} />
 					{/* <Route exact path="/devTechnology" component={devTechnology} /> */}
-                    <Route exact path="/form" component={Form} />
+          <Route exact path="/form" component={Form} />
 					<Route exact path="/frontendDev" component={FrontendDev} />
 					<Route exact path="/backendDev" component={BackendDev} />
 					{/* <Route exact path="/profile" component={Profile} /> */}
 					<Route exact path="/technology" component={Technology} />
+					<Route exact path="/profile" component={Profile} />
 					{/* <Route exact path="/profile" component={Profile} /> */}
-					<Route exact path="/client" component={Client} />
+					<Route exact path="/client" component={Frontend} />
 					<Route component={Notfound} />
 					</Switch>
 					{/* <Footer /> */}
