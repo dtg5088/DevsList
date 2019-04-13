@@ -12,6 +12,7 @@ import BackendDev from "./components/BackendDev/backendDev";
 import Technology from './pages/technology';
 import Frontend from "./pages/Client";
 import Profile from './pages/profile';
+import Footer from "./components/Footer/Footer"
 
 class App extends Component {
 
@@ -52,7 +53,7 @@ class App extends Component {
 					<Route exact path="/client" component={Frontend} />
 					<Route component={Notfound} />
 					</Switch>
-					{/* <Footer /> */}
+					<Footer />
 				</div>
 			</Router>
 		);

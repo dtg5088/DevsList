@@ -1,37 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /*------------- Main Container -------------------*/
 main {
  
@@ -52,9 +18,9 @@ main section {
 }
 
 main section h2 {
-  font-size: 4.3rem;
-  color: #ddd;
-  text-transform: uppercase;
+ font-size: 4.3rem;
+ color: #ddd;
+ text-transform: uppercase;
  line-height: 4.2rem; 
  padding-right: 10px;
  border-right: 3px solid #ddd;
@@ -78,7 +44,7 @@ div.services {
   height: auto;
   grid-template-columns: repeat(3,1fr);
   padding: 10px;
-
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 

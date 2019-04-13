@@ -72,8 +72,9 @@ class Main extends React.Component {
                 <div className="gallery-item-six" />
               </div>
 
-              <section>
-                <div className="jumbotron jumbotron-fluid">
+              <div className="jumbotron jumbotron-fluid">
+                <section>
+                
                   <h2>Why us</h2>
                   <div>
                     <p>
@@ -89,8 +90,9 @@ class Main extends React.Component {
                       least of pain for you and your team!
                     </p>
                   </div>
-                </div>
-              </section>
+                
+                </section>
+              </div>
 
               <section>
                 <h2>Contact Us</h2>
