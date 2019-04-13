@@ -1,8 +1,9 @@
 import React from "react";
+import "../FrontendDev/frontendDev.css";
 
-const skills = ["react", "angular", "css", "html"];
+const skills = ["React", "Angular", "CSS", "Html", "JavaScript", "Jquery", "Bootstrap", "Materialize-CSS", "Sass", "LESS", "Heroku", "Git", "GitHub", "Ember", "Backbone", "HandleBars", "Cross-Browser-Development", "Grunt", "Karma", "Mocha" ];
 
-class Form extends React.Component {
+class FrontendDev extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,24 +35,28 @@ class Form extends React.Component {
     });
   };
 
-  swapSkills = () => {};
+  swapSkills = () => {
+
+
+
+  };
 
   render() {
     return (
       <div>
-        <button onClick={this.swapSkills}>Front End</button>
-        <button onClick={this.swapSkills}>BackEnd</button>
+        
+        <h3>Frontend Developer</h3>
         {Object.keys(this.state.skills).map(key => {
           const isChecked = this.state.skills[key];
           return (
             <div>
-              <label>{key}</label>
               <input
                 name={key}
                 type="checkbox"
                 checked={isChecked}
                 onChange={this.change}
               />
+              <label>{key}</label>
             </div>
           );
         })}
@@ -61,7 +66,7 @@ class Form extends React.Component {
   }
 }
 
-export default Form;
+export default FrontendDev;
 
 
 
