@@ -42,66 +42,69 @@ class Frontend extends React.Component {
  
     render() {
       return (
-        <div>
+        <div className="container" id="clientSurvey">
            <form>
-           <label>
-            Company Name:
-            <input type="text" name="company" value={this.state.company} onChange={this.handleOptionChange} />
-          </label>
-           <p>Question 2: How old is your company?</p>
-           
-            <Radio
-                id="Question2RadioA"
-                name="businessAge"
-                value="Brand New"
-                checked={this.state.businessAge === "Brand New"}
-                onChange={this.handleOptionChange}
-                className="form-class-input"
-                label={
-                <span>A) Brand New</span>
-                }
-                />
- 
-            <Radio
-                id="Question2RadioB"
-                name="businessAge"
-                value="Less than 1 year old"
-                checked={this.state.businessAge === "Less than 1 year old"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-                label={
-                <span>B) Less than 1 year old</span>
-                }
-               />
+            <div className="clientsName">
+                <label className="form-group">
+                    Company Name:
+                    <input class="form-control" type="text" name="company" value={this.state.company} onChange={this.handleOptionChange} />
+                </label>
+            </div>
+            <div className="qb">
+                <p>Question 2: How old is your company?</p>
+                
+                    <Radio
+                        id="Question2RadioA"
+                        name="businessAge"
+                        value="Brand New"
+                        checked={this.state.businessAge === "Brand New"}
+                        onChange={this.handleOptionChange}
+                        className="form-class-input"
+                        label={
+                        <span>A) Brand New</span>
+                        }
+                        />
+        
+                    <Radio
+                        id="Question2RadioB"
+                        name="businessAge"
+                        value="Less than 1 year old"
+                        checked={this.state.businessAge === "Less than 1 year old"}
+                        onChange={this.handleOptionChange}
+                        className="form-check-input"
+                        label={
+                        <span>B) Less than 1 year old</span>
+                        }
+                    />
 
-            <Radio
-                id="Question2RadioC"
-               name="businessAge"
-                value="2-5 years old"
-                checked={this.state.businessAge === "2-5 years old"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-                label={
-                <span>C) 2-5 years old</span>
-                }
-            />
+                    <Radio
+                        id="Question2RadioC"
+                    name="businessAge"
+                        value="2-5 years old"
+                        checked={this.state.businessAge === "2-5 years old"}
+                        onChange={this.handleOptionChange}
+                        className="form-check-input"
+                        label={
+                        <span>C) 2-5 years old</span>
+                        }
+                    />
 
-            <Radio
-                id="Question2RadioD"
-                name="businessAge"
-                value="6+ years old"
-                checked={this.state.businessAge === "6+ years old"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-                label={
-                <span>D) 6+ years old</span>
-                }
-            />
+                    <Radio
+                        id="Question2RadioD"
+                        name="businessAge"
+                        value="6+ years old"
+                        checked={this.state.businessAge === "6+ years old"}
+                        onChange={this.handleOptionChange}
+                        className="form-check-input"
+                        label={
+                        <span>D) 6+ years old</span>
+                        }
+                    />
             
                 <br/>
                 <br/>
-
-
+            </div>
+            <div className="qc">
                 <p>Question 3: What will your website do? Pick the best one to describe your goals:</p>
                 <Radio
                 id="Question3RadioA"
@@ -149,9 +152,10 @@ class Frontend extends React.Component {
             />
             <br/>
             <br/>
-
+        </div>
+        <div className="qd">
             <p>Question 4: Will you require an original logo?</p>
-            
+        
             <Radio 
                 id="Question4RadioA"
                 name="siteLogo"
@@ -176,7 +180,8 @@ class Frontend extends React.Component {
             />
             <br/>
             <br/>
-
+        </div>
+        <div className="qe">
             <p>Question 5: Will your website require information storage? (ex: customer phone numbers, payment info, appointment history, etc)</p>
             <Radio
             id="Question5RadioA"
@@ -202,6 +207,8 @@ class Frontend extends React.Component {
             />
             <br/>
             <br/>
+        </div>
+        <div className="qf">
             <p>Question 6: Do you want a custom branding?</p>
             <Radio
             id="Question6RadioA"
@@ -227,6 +234,8 @@ class Frontend extends React.Component {
             />
             <br/>
             <br/>
+        </div>
+        <div className="qg">
             <p>Question 7: Do you want your site to have a mobile app?</p>
             <Radio
             id="Question7RadioA"
@@ -252,6 +261,8 @@ class Frontend extends React.Component {
             />
             <br/>
             <br/>
+        </div>
+        <div className="qh">
             <p>Question 8: Do you want your wesbite to be mobile responsive?</p>
             <Radio
             id="Question8RadioA"
@@ -277,6 +288,8 @@ class Frontend extends React.Component {
             />
             <br/>
             <br/>
+        </div>
+        <div className="qi">
             <p>Question 9: Do you want to work with your developer remotely or face to face?</p>
             <Radio
             id="Question9RadioA"
@@ -311,13 +324,14 @@ class Frontend extends React.Component {
                 <span>No Preference</span>
             }
             />
+        </div>
             </form>
 
 
  
             
  
-          <button onClick={this.handleSubmit}>Save</button>
+          <button type="button" className="btn btn-danger" onClick={this.handleSubmit}>Save</button>
       
         </div>
       );

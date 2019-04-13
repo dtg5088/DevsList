@@ -113,3 +113,19 @@ div.services {
   padding: 0px 90px 20px 90px; 
   text-align: left;
 }
+
+/* --------Client Page------------ */
+
+#clientSurvey {
+  margin-top: 30px;
+}
+
+.clientsName {
+  background-color: rgb(220,220,220);
+  padding: 50px 0 50px 0;
+  border-radius: 5px;
+}
+.clientsName, .qb, .qc, .qd, .qe, .qf, .qg, .qh, .qi {
+  border-bottom: 1px solid #282c34;
+  padding: 30px;
+}
