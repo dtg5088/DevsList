@@ -11,7 +11,7 @@ class Main extends React.Component {
                 <h2>Our purpose</h2>
                 <div>
                   <p>
-                    Dev's List was created to facilitate communication
+                    Devs List was created to facilitate communication
                     between client and developer and takes away the need
                     to be tech savvy! Client can now be confident in
                     getting the skilled developer that matches their
