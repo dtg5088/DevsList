@@ -99,9 +99,9 @@ div.services {
   font-size: 3.4rem;
   padding: 30px 0px 30px 0px;
   text-align: center;
-  color: coral;
+  color: rgb(36,99,146);
   filter: grayscale(0%);
-  border-bottom: 2px solid lightgreen;
+  border-bottom: 2px solid gray;
 }
 .services p.service-title{
   font-size: 2rem;
