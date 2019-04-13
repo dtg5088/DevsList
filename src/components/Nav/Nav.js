@@ -19,10 +19,10 @@ class Nav extends Component {
               <div className="collapse navbar-collapse" id="navbarCollapse">
                 <ul className="navbar-nav mr-auto">
                   <li className="nav-item active">
-                    <a className="nav-link" href="/discover">DISCOVER</a>
+                    <a className="nav-link" href="/discover">BROWSE DEVELOPERS</a>
                   </li>
                   <li className="nav-item active">
-                    <a className="nav-link" href="/form">INTAKE FORM</a>
+                    <a className="nav-link" href="/Client">GET MATCHED WITH DEVELOPER</a>
                   </li>
                 </ul>
               </div>
