@@ -99,9 +99,9 @@ div.services {
   font-size: 3.4rem;
   padding: 30px 0px 30px 0px;
   text-align: center;
-  color: coral;
+  color: rgb(36,99,146);
   filter: grayscale(0%);
-  border-bottom: 2px solid lightgreen;
+  border-bottom: 2px solid gray;
 }
 .services p.service-title{
   font-size: 2rem;
@@ -112,4 +112,20 @@ div.services {
 .services p:last-of-type{
   padding: 0px 90px 20px 90px; 
   text-align: left;
+}
+
+/* --------Client Page------------ */
+
+#clientSurvey {
+  margin-top: 30px;
+}
+
+.clientsName {
+  background-color: rgb(220,220,220);
+  padding: 50px 0 50px 0;
+  border-radius: 5px;
+}
+.clientsName, .qb, .qc, .qd, .qe, .qf, .qg, .qh, .qi {
+  border-bottom: 1px solid #282c34;
+  padding: 30px;
 }
