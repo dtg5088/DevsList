@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------- Main Container -------------------*/
+main {
+ 
+  position: relative;
+  z-index: 3;
+ overflow: hidden;
+}
+
+
+main section {
+  width: 70%;
+  padding: 90px 0;
+  margin: 50px auto 150px auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+
+}
+
+main section h2 {
+  font-size: 4.3rem;
+  color: #ddd;
+  text-transform: uppercase;
+ line-height: 4.2rem; 
+ padding-right: 10px;
+ border-right: 3px solid #ddd;
+}
+
+
+
+main section div {
+  position: relative;
+
+}
+
+main section div p {
+  padding-left: 10px;
+}
+
+ /*------------- Services Cards -------------------*/
+
+div.services {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3,1fr);
+  padding: 10px;
+
+}
+
+
+.services div {
+  text-align: center;
+  background: #fff;
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px auto 50px auto;
+  
+  -webkit-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  
+}
+
+.services p.service-icon {
+  font-size: 3.4rem;
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+  color: coral;
+  filter: grayscale(0%);
+  border-bottom: 2px solid lightgreen;
+}
+.services p.service-title{
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.services p:last-of-type{
+  padding: 0px 90px 20px 90px; 
+  text-align: left;
+}
