@@ -11,7 +11,7 @@ class Nav extends Component {
           <nav className="navbar navbar-toggleable-md navbar-inverse fixed-top">
             <div className="container">
               <button className="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
               <a className="navbar-brand" href="/">
                 <img src={logo} width="95" height="38" alt="" />
@@ -27,7 +27,7 @@ class Nav extends Component {
                 </ul>
               </div>
               <form className="form-inline">
-                <button type="button" class="btn btn-outline-light navbar-btn">Sign in</button>
+                <button type="button" className="btn btn-outline-light navbar-btn">Sign in</button>
               </form>
               {/* <form className="form-inline mt-2 mt-md-0">
                 <input className="form-control mr-sm-2" type="text" placeholder="Search" />
