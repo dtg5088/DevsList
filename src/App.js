@@ -9,8 +9,8 @@ import Main from "./pages/Main";
 import Register from "./pages/Register";
 import FrontendDev from "./components/FrontendDev/frontendDev";
 import Technology from './pages/technology';
+import Frontend from "./pages/Client";
 import Profile from './pages/profile';
-import Client from "./pages/Client";
 
 class App extends Component {
 
@@ -46,7 +46,7 @@ class App extends Component {
 					<Route exact path="/technology" component={Technology} />
 					<Route exact path="/profile" component={Profile} />
 					{/* <Route exact path="/profile" component={Profile} /> */}
-					<Route exact path="/client" component={Client} />
+					<Route exact path="/client" component={Frontend} />
 					<Route component={Notfound} />
 					</Switch>
 					{/* <Footer /> */}
