@@ -2,30 +2,59 @@ import React from 'react';
 import Radio from "../components/Radio/Radio";
 
 
+ 
+
+  
+  
+
 class Frontend extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { selectedOption: "option1" };
+      this.state = { 
+        company  : "",
+        businessAge : "",
+          websiteGoal : "",
+          siteBranding : "",
+          siteInfoStorage : "",
+          siteLogo : "",
+          mobileApp : "",
+          mobileResponsive : "",
+          meetDev : ""
+       };
     }
  
-    handleOptionChange = changeEvent => {
+    handleOptionChange = event => {
+        event.preventDefault()
+        const{name, value} = event.target
         this.setState({
-          selectedOption: changeEvent.target.value
+          [name]: value
         });
       };
+
+    handleSubmit = (event) => {
+    event.preventDefault()
+        console.log(
+            this.state
+        
+        )} 
+        // Make API call 
   
  
     render() {
       return (
         <div>
            <form>
+           <label>
+            Company Name:
+            <input type="text" name="company" value={this.state.company} onChange={this.handleOptionChange} />
+          </label>
            <p>Question 2: How old is your company?</p>
            
             <Radio
                 id="Question2RadioA"
-                name="businessSize"
-                value="option1"
-                checked={this.state.selectedOption === "option1"}
+                name="businessAge"
+                value="Brand New"
+                checked={this.state.businessAge === "Brand New"}
                 onChange={this.handleOptionChange}
                 className="form-class-input"
                 label={
@@ -35,9 +64,9 @@ class Frontend extends React.Component {
  
             <Radio
                 id="Question2RadioB"
-                name="businessSize"
-                value="option2"
-                checked={this.state.selectedOption === "option2"}
+                name="businessAge"
+                value="Less than 1 year old"
+                checked={this.state.businessAge === "Less than 1 year old"}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
@@ -47,9 +76,9 @@ class Frontend extends React.Component {
 
             <Radio
                 id="Question2RadioC"
-               name="businessSize"
-                value="option3"
-                checked={this.state.selectedOption === "option3"}
+               name="businessAge"
+                value="2-5 years old"
+                checked={this.state.businessAge === "2-5 years old"}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
@@ -59,9 +88,9 @@ class Frontend extends React.Component {
 
             <Radio
                 id="Question2RadioD"
-                name="businessSize"
-                value="option4"
-                checked={this.state.selectedOption === "option4"}
+                name="businessAge"
+                value="6+ years old"
+                checked={this.state.businessAge === "6+ years old"}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
@@ -77,8 +106,8 @@ class Frontend extends React.Component {
                 <Radio
                 id="Question3RadioA"
                 name="websiteGoal"
-                value="option1"
-                checked={this.state.selectedOption === "option1"}
+                value="Show pictures, have physical info (phone number, address, email of employees), brief bio/photo of employees, pleasant design"
+                checked={this.state.websiteGoal === "option1"}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
@@ -88,8 +117,8 @@ class Frontend extends React.Component {
             <Radio
                 id="Question3RadioB"
                 name="websiteGoal"
-                value="option2"
-                checked={this.state.selectedOption === "option2"}
+                value="All of the above, also adding an email sign up for your customers"
+                checked={this.state.websiteGoal === "All of the above, also adding an email sign up for your customers"}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
@@ -99,19 +128,19 @@ class Frontend extends React.Component {
              <Radio
                 id="Question3RadioC"
                 name="websiteGoal"
-                value="option3"
-                checked={this.state.selectedOption === "option3"}
+                value="All of the above, plus 1 of the following (you can decide and discuss which option you need with your developer after youre matched): <br/> * A link to add directions through google maps to your business <br/>  *Creating an appointment calendar for your clients to use <br/> * Adding an online payment option <br/> *Clients of your business can create a user profile to keep track of appointments and payments."
+                checked={this.state.websiteGoal === "All of the above, plus 1 of the following (you can decide and discuss which option you need with your developer after youre matched): <br/> * A link to add directions through google maps to your business <br/>  *Creating an appointment calendar for your clients to use <br/> * Adding an online payment option <br/> *Clients of your business can create a user profile to keep track of appointments and payments."}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
-                <span>C) All of the above, plus 1 of the following (you can decide and discuss which option you need with your developer after you're matched): <br/> * A link to add directions through google maps to your business <br/>  *Creating an appointment calendar for your clients to use <br/> * Adding an online payment option <br/> *Clients of your business can create a user profile to keep track of appointments and payments. </span>
+                <span>C) All of the above, plus 1 of the following (you can decide and discuss which option you need with your developer after youre matched): <br/> * A link to add directions through google maps to your business <br/>  *Creating an appointment calendar for your clients to use <br/> * Adding an online payment option <br/> *Clients of your business can create a user profile to keep track of appointments and payments. </span>
                 }
                />
             <Radio
                 id="Question3RadioD"
                 name="websiteGoal"
-                value="option4"
-                checked={this.state.selectedOption === "option4"}
+                value="All of the above"
+                checked={this.state.websiteGoal === "All of the above"}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
@@ -125,9 +154,9 @@ class Frontend extends React.Component {
             
             <Radio 
                 id="Question4RadioA"
-                name="siteBranding"
-                value="option1"
-                checked={this.state.selectedOption === "option1"}
+                name="siteLogo"
+                value="Yes"
+                checked={this.state.siteLogo === "Yes"}
                 onChange={this.handleOptionChange}
                 className="form-check-input"
                 label={
@@ -136,9 +165,9 @@ class Frontend extends React.Component {
                 />
             <Radio 
             id="Question4RadioB"
-            name="siteBranding"
-            value="option2"
-            checked={this.state.selectedOption === "option2"}
+            name="siteLogo"
+            value="No"
+            checked={this.state.siteLogo === "No"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -152,8 +181,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question5RadioA"
             name="siteInfoStorage"
-            value="option1"
-            checked={this.state.selectedOption === "option1"}
+            value="Yes"
+            checked={this.state.siteInfoStorage === "Yes"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -163,8 +192,8 @@ class Frontend extends React.Component {
             <Radio 
             id="Question5RadioB"
             name="siteInfoStorage"
-            value="option2"
-            checked={this.selectedOption === "option2"}
+            value="No"
+            checked={this.state.siteInfoStorage === "No"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -177,8 +206,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question6RadioA"
             name="siteBranding"
-            value="option1"
-            checked={this.selectedOption === "option1"}
+            value="Yes"
+            checked={this.state.siteBranding === "Yes"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -188,8 +217,8 @@ class Frontend extends React.Component {
             <Radio 
             id="Question6RadioB"
             name="siteBranding"
-            value="option2"
-            checked={this.selectedOption === "option2"}
+            value="No"
+            checked={this.state.siteBranding === "No"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -202,8 +231,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question7RadioA"
             name="mobileApp"
-            value="option1"
-            checked={this.selectedOption === "option1"}
+            value="Yes"
+            checked={this.state.mobileApp === "Yes"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -213,8 +242,8 @@ class Frontend extends React.Component {
             <Radio 
             id="Question7RadioB"
             name="mobileApp"
-            value="option2"
-            checked={this.selectedOption === "option2"}
+            value="No"
+            checked={this.state.mobileApp === "No"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -227,8 +256,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question8RadioA"
             name="mobileResponsive"
-            value="option1"
-            checked={this.selectedOption === "option1"}
+            value="Yes"
+            checked={this.state.mobileResponsive === "Yes"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -238,8 +267,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question8RadioB"
             name="mobileResponsive"
-            value="option2"
-            checked={this.selectedOption === "option2"}
+            value="No"
+            checked={this.state.mobileResponsive === "No"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -252,8 +281,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question9RadioA"
             name="meetDev"
-            value="option1"
-            checked={this.selectedOption === "option1"}
+            value="Yes"
+            checked={this.state.meetDev === "Yes"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -263,8 +292,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question9RadioB"
             name="meetDev"
-            value="option2"
-            checked={this.selectedOption === "option2"}
+            value="No"
+            checked={this.state.meetDev === "No"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -274,8 +303,8 @@ class Frontend extends React.Component {
             <Radio
             id="Question9RadioC"
             name="meetDev"
-            value="option3"
-            checked={this.selectedOption === "option3"}
+            value="No Preference"
+            checked={this.state.meetDev === "No Preference"}
             onChange={this.handleOptionChange}
             className="form-check-input"
             label={
@@ -288,12 +317,14 @@ class Frontend extends React.Component {
  
             
  
-          <button onClick={() => this._handleClick()}>click</button>
+          <button onClick={this.handleSubmit}>Save</button>
       
         </div>
       );
     }
  
   }
- 
-  export default Frontend;
+
+  export {
+    Frontend
+  }

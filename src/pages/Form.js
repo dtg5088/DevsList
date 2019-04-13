@@ -3,7 +3,6 @@ import React from 'react';
 
 class Form extends React.Component {
 
-<<<<<<< HEAD
    state = {
        businessType: "",
        businessSize: "",
@@ -14,17 +13,6 @@ class Form extends React.Component {
        mobileApp: "",
        mobileResponsive: "",
        meetDev: ""
-=======
-    state = {
-        businessType: "",
-        businessSize: "",
-        webSiteGoal: "",
-        siteFunction: "",
-        siteInfoStorage: "",
-        siteBranding: "",
-        mobileApp: "",
-        mobileResponsive: "",   
->>>>>>> 03f81176209d1da72da65784d1740e9f876cebac
 
    }
 
@@ -40,7 +28,7 @@ class Form extends React.Component {
        console.log(this.state);
        this.setState({
            businessType: "",
-           businessSize: "",
+           businessAge: "",
            webSiteGoal: "",
            siteFunction: "",
            siteInfoStorage: "",
